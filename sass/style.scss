@@ -20,19 +20,17 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 500px;
+  //display: block;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 40px 0;
 }
 .navigation {
-  flex: 0 1 auto;
-  align-self: flex-end;
+  display: flex;
   background-color: transparent;
-  padding: 0 30px;
-  margin-top: -20px;
+  justify-content: flex-end;
 }
 .nav-horizontal {
     width: 500px;
@@ -55,16 +53,13 @@ body {
     }
 }
 .Splash {
-    flex: 0 1 auto;
     padding: 70px;
-    align-self: center;
     color: $color-base;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-
 .page-title {
     font-size: 25px;
     font-weight: 400;
@@ -74,7 +69,7 @@ body {
 .page-subtitle {
     font-weight: 400;
     font-size: 70px;
-    margin: 0;
+    margin-top: 0;
 }
 .btn {
     min-width: 200px;
@@ -99,36 +94,47 @@ body {
 }
 
 /* Service */
-
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 70px 0;
+  text-align: center;
+}
+.service-title {
+  padding: 30px;
+  h1 {
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
 .wraper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.service {
-    flex: 0 0 33.333%;
-    position: relative;
-    p {
-        margin-right: 12px;
-        padding-bottom: 70px;
-    }
-    p:first-of-type {
-        font-weight: bolder;
-    }
+.service-option {
+    flex: 1;
+    padding: 10px 20px;
 }
-.service-number {
-    position: absolute;
-    font-size: 144px;
-    line-height: 1;
-    font-family: 'Signika', sans-serif;
-    color: #00b894;
-    opacity: 0.15;
-    top: -20px;
-    left: 2px;
+.service-icon {
+  font-size: 40px;
+  color: $color-secondary;
+  background: transparent;
+  border: 2px solid $color-secondary;
+  border-radius: 50%;
+  padding: 10px;
 }
 
-/* our work */
 
+/* Portfolio */
+
+.portfolio-bg {
+  background-color: #ecf0f1;
+}
 .work {
     flex: 0 0 50%;
     display: flex;
